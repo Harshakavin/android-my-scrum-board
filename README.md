@@ -1,1 +1,2 @@
-# android-my-scrum-board
+password= "abcd1234"
+username = "sliit"

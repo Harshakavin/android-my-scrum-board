@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">MyScum-Board</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <!-- xml strings and defaults -->
+    <string name="kanban_boards">My Scum boards</string>
+    <string name="default_kanban_title">My Scum board</string>
+    <string name="default_kanban_description">This is your first Scum board</string>
+    <string name="no_account_text">No account yet? Create one!</string>
+    <string name="login">Login</string>
+    <string name="hint_username">username</string>
+    <string name="hint_password">password</string>
+    <string name="hint_email">email</string>
+    <string name="register">Register</string>
+    <string name="hint_board_name">Board name</string>
+    <string name="hint_board_description">Board description</string>
+    <string name="hint_card">Card description</string>
+
+    <!-- Categories -->
+    <string name="todo">To do</string>
+    <string name="inprogress">In progress</string>
+    <string name="paused">Paused</string>
+    <string name="testing">Testing</string>
+    <string name="done">Done</string>
+
+    <!-- EditTexts -->
+    <string name="username_error">Empty username</string>
+    <string name="password_error">Empty password</string>
+    <string name="email_error">Empty email</string>
+    
+    <!-- Actions -->
+    <string name="choose_action">Choose an action</string>
+    <string name="moveto">Move to...</string>
+    <string name="edit_card">Edit card</string>
+    <string name="delete_card">Delete card</string>
+    <string name="ok">Ok</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="logout">Logout</string>
+
+    <!-- Dialogs -->
+    <string name="login_dialog_title">Logging in</string>
+    <string name="login_dialog_content">Wait while logging into your account</string>
+    <string name="login_dialog_error_title">Login error</string>
+    <string name="login_dialog_error_content">There is an error with the login</string>
+    <string name="register_dialog_title">Registration</string>
+    <string name="register_dialog_content">Wait while your account is created</string>
+    <string name="register_dialog_error_title">Registration error</string>
+    <string name="register_dialog_error_content">There is an error with the registration</string>
+    <string name="error_dialog_title">Error</string>
+    <string name="network_error_dialog_content">Error connecting to the server</string>
+    <string name="logout_dialog_title">Close session</string>
+    <string name="logout_dialog_content">Are you sure you want to logout?</string>
+    <string name="logout_dialog_error_content">Error closing session</string>
+    <string name="delete_card_dialog_title">Delete card</string>
+    <string name="delete_card_dialog_content">Are you sure you want to delete this card?</string>
+    <string name="create_card_dialog_title">Create card</string>
+    <string name="create_card_dialog_content">Enter the description</string>
+    <string name="create_card_error_dialog_content">Error creating card</string>
+    <string name="create_board_dialog_title">Create board</string>
+    <string name="create_board_dialog_content">Enter the name and description</string>
+    <string name="create_board_error_dialog_content">Error creating board</string>
+    <string name="card_description_empty">The card description is empty</string>
+    <string name="board_fields_error">The board fields are not valid</string>
+    <string name="default_board_error_dialog_content">Error creating default board</string>
+    <string name="get_boards_error_dialog">Error getting boards</string>
+    <string name="choose_category_dialog">Choose a category</string>
+    <string name="move_card_error_dialog">Error moving card</string>
+    <string name="edit_card_error_dialog">Error editing card</string>
+    <string name="not_edit_card_error_dialog">The card was not edited</string>
+    <string name="edit_card_dialog_title">Edit card</string>
+    <string name="edit_card_dialog_content">Edit the description</string>
+    <string name="delete_card_error_dialog">Error deleting card</string>
+    <string name="edit_board_error_dialog">Error editing board</string>
+    <string name="edit_board_dialog_title">Edit board</string>
+    <string name="edit_board_dialog_content">Enter the name and description</string>
+    <string name="delete_board_error_dialog">Error deleting board</string>
+    <string name="delete_board_dialog_title">Delete board</string>
+    <string name="delete_board_dialog_content">Are you sure you want to delete this board?</string>
+
+    <!-- Toasts -->
+    <string name="register_send_email">We have sent you an email to activate your Taskban account</string>
+    <string name="card_created">Card created successfully</string>
+    <string name="board_created">Board created successfully</string>
+    <string name="card_moved">Card moved successfully</string>
+    <string name="card_edited">Card edited successfully</string>
+    <string name="card_removed">Card removed successfully</string>
+    <string name="board_edited">Board edited successfully</string>
+    <string name="board_removed">Board removed successfully</string>
+
+    <string-array name="actions_array">
+        <item>@string/moveto</item>
+        <item>@string/edit_card</item>
+        <item>@string/delete_card</item>
+    </string-array>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Card item UI in the list-->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="133dp"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:padding="@dimen/activity_horizontal_margin"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:id="@+id/card_left_color"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.25"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Task"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9.75"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:id="@+id/card_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/relativeLayout"
+                    android:layout_toStartOf="@+id/relativeLayout"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:text="descripción bla bla bla bla"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="97dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="0.25">
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        card_view:srcCompat="@mipmap/delete" />
+
+                    <TextView
+                        android:id="@+id/assign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignLeft="@+id/imageView2"
+                        android:layout_alignStart="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:text="Assign "
+                        android:textColor="@android:color/holo_blue_light"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_below="@+id/delete"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        card_view:srcCompat="@mipmap/user" />
+
+                    <Button
+                        android:id="@+id/move"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/assign"
+                        android:background="@android:color/holo_blue_bright"
+                        android:elevation="0dp"
+                        android:text="Move "
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        card_view:srcCompat="@mipmap/clock" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imageView3"
+                        android:text="0h" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/edit"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:layout_alignBottom="@+id/card_description"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_toLeftOf="@+id/relativeLayout"
+                    android:layout_toStartOf="@+id/relativeLayout"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    card_view:srcCompat="@mipmap/edit" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
